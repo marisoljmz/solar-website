@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="screen-catalogo" class="page-section">
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Solar Logo">
+            </div>
+
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-btn" data-nav="inicio">INICIO</a>
+                <a href="#catalog-grid" class="nav-btn" data-nav="ropa">ROPA</a>
+                <a href="#novedades" class="nav-btn" data-nav="ofertas">OFERTAS</a>
+                <a href="#contacto" class="nav-btn" data-nav="contacto">CONTACTO</a>
+            </nav>
+        </header>
+
+        <section class="hero-section" id="inicio">
+            <div class="hero-content">
+                <h1>Solar</h1>
+                <p>Atrévete a brillar</p>
+            </div>
+        </section>
+
+        <div class="new-arrivals" id="novedades">
+            <h2>Lo más nuevo</h2>
+
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <img src="img/top-sarah.jpg" alt="Top Sarah">
+                    <h3>Top Sarah</h3>
+                    <p>Blusa de satín en tono rosa, perfecta para tus salidas de noche.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/chaqueta-lily.jpg" alt="Chaqueta Lily">
+                    <h3>Chaqueta Lily</h3>
+                    <p>Chaqueta corta cruzada en color café oscuro, ideal para elevar tu outfit.</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/top-elena.jpg" alt="Top Elena">
+                    <h3>Top Elena</h3>
+                    <p>Blusa ligera de tirantes finos en tono lavanda, ¡no puede faltar en tus días de verano!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="categories-bar">
+
+            <div class="category-item active" data-category="tops">
+                <img src="img/cat-tops.png" alt="Tops">
+                <span>Tops</span>
+            </div>
+
+            <div class="category-item" data-category="pantalones">
+                <img src="img/cat-pantalones.png" alt="Pantalones">
+                <span>Pantalones</span>
+            </div>
+
+            <div class="category-item" data-category="bolsas">
+                <img src="img/cat-bolsas.png" alt="Bolsas">
+                <span>Bolsas</span>
+            </div>
+
+            <div class="category-item" data-category="zapatos">
+                <img src="img/cat-zapatos.png" alt="Zapatos">
+                <span>Zapatos</span>
+            </div>
+
+        </div>
+      <div class="tops-grid" id="catalog-grid" style="display: none;">
+
+            <div class="top-card"
+                 data-product="Top Peonia"
+                 data-image="img/top-peonia.png">
+                <img src="img/top-peonia.png" alt="Top Peonia">
+                <h3>Top Peonia</h3>
+                <p>$350</p>
+            </div>
+
+            <div class="top-card"
+                 data-product="Top Esme"
+                 data-image="img/top-esme.png">
+                <img src="img/top-esme.png" alt="Top Esme">
+                <h3>Top Esme</h3>
+                <p>$350</p>
+            </div>
+
+            <div class="top-card"
+                 data-product="Top Maia"
+                 data-image="img/top-maia.png">
+                <img src="img/top-maia.png" alt="Top Maia">
+                <h3>Top Maia</h3>
+                <p>$350</p>
+            </div>
+
+            <div class="top-card"
+                 data-product="Top Flor"
+                 data-image="img/top-flor.png">
+                <img src="img/top-flor.png" alt="Top Flor">
+                <h3>Top Flor</h3>
+                <p>$350</p>
+            </div>
+
+            <div class="top-card"
+                 data-product="Top Rose"
+                 data-image="img/top-rose.png">
+                <img src="img/top-rose.png" alt="Top Rose">
+                <h3>Top Rose</h3>
+                <p>$350</p>
+            </div>
+
+            <div class="top-card"
+                 data-product="Top Calu"
+                 data-image="img/top-calu.png">
+                <img src="img/top-calu.png" alt="Top Calu">
+                <h3>Top Calu</h3>
+                <p>$350</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="screen-detalle"
+        class="page-section product-detail-container"
+        style="display: none;">
+
+        <div class="product-gallery">
+
+            <div class="thumbnail-list">
+                <img src="img/top-rose-thumb1.png"
+                    alt="Vista 1"
+                    class="thumb active">
+
+                <img src="img/top-rose-thumb2.png"
+                    alt="Vista 2"
+                    class="thumb">
+            </div>
+
+            <div class="main-image">
+                <img src="img/top-rose-main.png"
+                    alt="Top Rose"
+                    id="current-img">
+            </div>
+
+        </div>
+
+        <div class="product-info">
+
+            <h1>Top Rose</h1>
+            <p class="price">$350</p>
+
+            <div class="option-group">
+                <label>Color</label>
+                <div class="color-swatch rose-color"></div>
+            </div>
+
+            <div class="option-group">
+                <label>Talla</label>
+
+                <div class="size-options">
+                    <button type="button" class="size-btn" aria-pressed="false">XS</button>
+                    <button type="button" class="size-btn" aria-pressed="false">S</button>
+                    <button type="button" class="size-btn" aria-pressed="false">M</button>
+                    <button type="button" class="size-btn active" aria-pressed="true">G</button>
+                    <button type="button" class="size-btn" aria-pressed="false">XG</button>
+                </div>
+            </div>
+
+            <div class="action-row">
+
+                <div class="quantity-control">
+                    <button type="button" class="qty-btn" id="qty-plus">+</button>
+                    <span id="qty-value">1</span>
+                    <button type="button" class="qty-btn" id="qty-minus">-</button>
+                </div>
+
+                <button type="button"
+                    class="add-to-cart-btn"
+                    id="btn-agregar">
+                    AGREGAR A CARRITO
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="screen-carrito"
+        class="page-section cart-section"
+        style="display: none;">
+
+        <h1 class="cart-title">Carrito de Compras</h1>
+        <h2 class="cart-subtitle">Resumen de mi compra</h2>
+
+        <div class="cart-container">
+
+            <div class="cart-product-image">
+                <img src="img/top-rose.jpg" alt="Top Rose">
+            </div>
+
+            <div class="cart-details">
+
+                <div class="cart-header">
+                    <h3>Top Rose</h3>
+                    <button type="button" class="remove-btn">
+                        Eliminar producto
+                    </button>
+                </div>
+
+                <div class="cart-controls-price">
+
+                    <div class="quantity-control pink-bg">
+                        <button type="button" class="qty-btn">+</button>
+                        <span>1</span>
+                        <button type="button" class="qty-btn">-</button>
+                    </div>
+
+                    <span class="unit-price">$350</span>
+
+                </div>
+
+                <div class="cart-summary">
+
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>$350</span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Envío:</span>
+                        <span>$120</span>
+                    </div>
+
+                    <div class="summary-row total-row">
+                        <strong>Total:</strong>
+                        <strong>$470</strong>
+                    </div>
+
+                </div>
+
+                <div class="checkout-container">
+                    <button type="button"
+                        class="checkout-btn"
+                        id="btn-iniciar-compra">
+                        INICIAR MI COMPRA
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="screen-entrega"
+        class="page-section"
+        style="display: none;">
+
+        <div class="checkout-logo">
+            <img src="img/logo.png" alt="SOLAR Logo">
+        </div>
+
+        <div class="checkout-progress">
+
+            <div class="progress-item completed">
+                <img src="img/icon-carrito.png" alt="Carrito">
+                <span>Carrito</span>
+            </div>
+
+            <div class="progress-line active"></div>
+
+            <div class="progress-item active">
+                <img src="img/icon-entrega.png" alt="Entrega">
+                <span>Entrega</span>
+            </div>
+
+            <div class="progress-line"></div>
+
+            <div class="progress-item">
+                <img src="img/icon-pago.png" alt="Pago">
+                <span>Pago</span>
+            </div>
+
+        </div>
+
+        <div class="checkout-grid">
+
+            <div class="form-column">
+
+                <h2>Datos de Contacto</h2>
+
+                <div class="input-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="NOMBRE" class="cyan-input">
+                </div>
+
+                <div class="input-group">
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="APELLIDOS" class="cyan-input">
+                </div>
+
+                <div class="input-group">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="TELÉFONO" class="cyan-input">
+                </div>
+
+                <div class="input-group">
+                    <label>E-Mail</label>
+                    <input type="email" placeholder="E-MAIL" class="cyan-input">
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">
+                        Quiero recibir ofertas y novedades por e-mail
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="form-column">
+
+                <h2>Datos de Entrega</h2>
+
+                <div class="input-group">
+                    <label>Calle</label>
+                    <input type="text" placeholder="CALLE" class="cyan-input">
+                </div>
+
+                <div class="inline-inputs">
+
+                    <div class="input-group">
+                        <label>Número Exterior</label>
+                        <input type="text" placeholder="NÚMERO EXTERIOR" class="cyan-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Número Interior</label>
+                        <input type="text" placeholder="NÚMERO INTERIOR" class="cyan-input">
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+                    <label>Fraccionamiento</label>
+                    <input type="text" placeholder="FRACCIONAMIENTO" class="cyan-input">
+                </div>
+
+                <div class="input-group">
+                    <label>Código Postal</label>
+                    <input type="text" placeholder="CÓDIGO POSTAL" class="cyan-input">
+                </div>
+
+                <div class="input-group">
+                    <label>Ciudad y País</label>
+                    <input type="text" placeholder="CIUDAD Y PAÍS" class="cyan-input">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="step-actions">
+            <button type="button"
+                class="next-btn"
+                id="btn-siguiente-pago">
+                Continuar al Pago
+            </button>
+        </div>
+
+    </section>
+
+
+    <section id="screen-pago"
+        class="page-section"
+        style="display: none;">
+
+        <div class="checkout-logo">
+            <img src="img/logo.png" alt="SOLAR Logo">
+        </div>
+
+        <div class="checkout-progress">
+
+            <div class="progress-item completed">
+                <img src="img/icon-carrito.png" alt="Carrito">
+                <span>Carrito</span>
+            </div>
+
+            <div class="progress-line active"></div>
+
+            <div class="progress-item active">
+                <img src="img/icon-entrega.png" alt="Entrega">
+                <span>Entrega</span>
+            </div>
+
+            <div class="progress-line"></div>
+
+            <div class="progress-item">
+                <img src="img/icon-pago.png" alt="Pago">
+                <span>Pago</span>
+            </div>
+
+        </div>
+
+        <div class="checkout-grid">
+
+            <div class="form-column">
+
+                <h2>Opción de Pago</h2>
+
+                <div class="payment-options">
+                    <button type="button" class="pay-option-btn active">
+                        Tarjeta de Crédito
+                    </button>
+
+                    <button type="button" class="pay-option-btn">
+                        Tarjeta de Débito
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="form-column">
+
+                <h2>Datos de Pago</h2>
+
+                <div class="input-group">
+                    <label>Titular de la tarjeta</label>
+                    <input type="text" placeholder="NOMBRE COMPLETO" class="cyan-input">
+                </div>
+
+                <div class="input-group">
+                    <label>Número de tarjeta</label>
+                    <input type="text" placeholder="NÚMERO DE TARJETA" class="cyan-input">
+                </div>
+
+                <div class="inline-inputs">
+
+                    <div class="input-group">
+                        <label>Fecha de Vencimiento</label>
+                        <input type="text" placeholder="MES/AÑO" class="cyan-input">
+                    </div>
+
+                    <div class="input-group">
+                        <label>CVV</label>
+                        <input type="password" placeholder="***" class="cyan-input">
+                    </div>
+
+                </div>
+
+                <div class="finish-container">
+                    <button type="button"
+                        class="finish-btn"
+                        id="btn-finalizar">
+                        Finalizar mi compra
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="screen-exito"
+        class="page-section"
+        style="display: none;">
+
+        <h1 class="success-title">
+            ¡Tu compra se ha realizado con éxito!
+        </h1>
+
+        <div class="receipt-card">
+
+            <div class="receipt-header">
+
+                <div class="product-summary">
+                    <h3>Top Rose</h3>
+                    <span>Talla G - Color Rosa</span>
+                </div>
+
+                <div class="total-summary">
+                    <strong>Total: $470</strong>
+                </div>
+
+                <div class="delivery-time">
+                    <strong>Tiempo estimado de llegada:</strong>
+                    <p>12 de Noviembre - 15 de Noviembre</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer id="contacto" class="site-footer">
+        <p><strong>SOLAR</strong> · Atrévete a brillar</p>
+        <p>Gracias por visitar nuestra boutique.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
